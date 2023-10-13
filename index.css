@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Rock+Salt&display=swap");
+
+body {
+  background-image: url(images/board-game.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(27, 28, 33);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.game-card {
+  background-color: hsla(35, 61%, 94%, 0.85);
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: fit-content;
+  margin: 2.5em;
+  padding: 2.5em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 40px;
+
+  -webkit-box-shadow: 0px 20px 40px 0px rgba(16, 31, 37, 0.5);
+  -moz-box-shadow: 0px 20px 40px 0px rgba(16, 31, 37, 0.5);
+  box-shadow: 0px 20px 40px 0px rgba(16, 31, 37, 0.5);
+}
+
+.notes {
+  background-color: #fff;
+  width: 18vw;
+  margin-top: 2em;
+  padding: 2em;
+}
+.prev-notes {
+  font-weight: 600;
+}
+.notes p {
+  line-height: 1.5;
+}
+h1 {
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-size: 3.125rem;
+  margin: 1.5rem 0;
+}
+button {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 40px;
+  width: 6rem;
+}
+#count-el {
+  font-family: "Rock Salt", display;
+}
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 1155px) {
+  .buttons {
+    flex-direction: column;
+  }
+}
+#increment-btn {
+  background: #005d7e;
+}
+#save-btn {
+  background: darkorange;
+}
+#save-btn:hover,
+#increment-btn:hover {
+  filter: contrast(120%);
+}
